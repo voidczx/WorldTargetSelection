@@ -5,7 +5,8 @@ DerivedDataCache/
 Intermediate/
 
 # Unreal generated files
-*.uplugin
+
+# Keep uplugin for plugin distribution
 *.uproject
 *.uproject.local
 
