@@ -7,7 +7,7 @@
 
 #include "WorldTargetComponent.generated.h"
 
-UCLASS(Blueprintable)
+UCLASS(Blueprintable, meta=(BlueprintSpawnableComponent))
 class WORLDTARGETSELECTION_API UWorldTargetComponentBase : public USceneComponent
 {
 	GENERATED_BODY()

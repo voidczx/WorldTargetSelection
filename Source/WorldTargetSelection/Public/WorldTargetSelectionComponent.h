@@ -19,7 +19,7 @@ struct WORLDTARGETSELECTION_API FWorldTargetSelectionComponentRule
 
 };
 
-UCLASS(Blueprintable)
+UCLASS(Blueprintable, meta=(BlueprintSpawnableComponent))
 class WORLDTARGETSELECTION_API UWorldTargetSelectionComponentBase : public USceneComponent
 {
 	GENERATED_BODY()
