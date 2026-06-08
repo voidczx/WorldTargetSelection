@@ -28,7 +28,7 @@ bool UWorldTargetSelectionLibrary::IsConditionPass(const FWorldTargetSelectionCo
 	}
 	const uint8 ConditionContainerType = StaticCast<uint8>(ConditionContainer.Type);
 	const bool TrueIsOrFalseIsAnd = (ConditionContainerType & 0x01) != 0;
-	const bool TrueIsNot = (ConditionContainerType & 0x10) != 0;
+	const bool TrueIsNot = (ConditionContainerType & 0x02) != 0;
 	bool Result = TrueIsOrFalseIsAnd ? false : true;
 	for (UWorldTargetSelectionConditionBase* ConditionObject : ConditionContainer.InnerObjects)
 	{
